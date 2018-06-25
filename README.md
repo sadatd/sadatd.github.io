@@ -26,10 +26,8 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 
 ```
-Go to [/bla.md](./bla.md)
+Go to this is md [/bla.md](./bla.md)
 or try this [/bla.html](./bla.html)
-or try this [bla.md](https://github.com/sadatd/sadatd.github.io/blob/master/bla.md)
-or even this [bla.html](https://github.com/sadatd/sadatd.github.io/blob/master/bla.html)
 # This is how to go to another link
 
 Go to my _Github page_ that you can find on: [mypage](https://github.com/sadatd)
