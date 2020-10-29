@@ -166,5 +166,9 @@ p.copyright {
 }
 
 #bih-logo {
-    width: 100px;
+    height: 100%;
+}
+
+#bih-brand {
+    height: 200px;
 }
