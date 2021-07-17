@@ -1,0 +1,189 @@
+/* 
+
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --green: hsl(179, 100%, 13%);
+  --t-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+  /* (background, headings, buttons) */
+  --ff-primary: 'Lexend Deca', sans-serif;
+  --ff-secondary: 'Big Shoulders Display', cursive;
+  --fs: 0.9375rem;
+  /* 15px */
+}
+
+/* Box sizing rules */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+  min-height: 100vh;
+  /* font-family: var(--ff-primary); */
+  font-size: var(--fs);
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* STYLING START HERE */
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 2rem auto;
+  width: 60%;
+}
+
+.orange {
+  background-color: var(--orange);
+  color: var(--orange);
+}
+
+.cyan {
+  background-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.dark_cyan {
+  background-color: var(--green);
+  color: var(--green);
+}
+
+.card {
+  padding: 2em 3em;
+}
+
+.card:first-of-type{
+  border-radius: 8px 8px 0 0;
+}
+
+.card:last-of-type  {
+  border-radius: 0 0 8px 8px;
+}
+
+.card .card__btn {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  text-decoration: none;
+  margin: 1em 0;
+  font-weight: 900;
+  background-color:hsl(0, 0%, 95%);
+  color: inherit;
+  padding: .75em 2em;
+  border-radius: 100px;
+  border: 2px solid hsl(0, 0%, 95%); 
+}
+
+.card__btn:focus, .card__btn:active, .card__btn:hover {
+  background-color: inherit;
+  border: 2px solid hsl(0, 0%, 95%); 
+  color: hsl(0, 0%, 95%);
+}
+
+.card__img {
+  margin: 2rem 0;
+}
+
+.card__title {
+  color: hsl(0, 0%, 95%);
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card__content {
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  color: var(--t-white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .container {
+    display: flex;
+  }
+  
+  .card:first-of-type{
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .card:last-of-type  {
+    border-radius: 0 8px  8px 0;
+  }
+
+  .card__content {
+    margin-bottom: 5em;
+  }
+}
