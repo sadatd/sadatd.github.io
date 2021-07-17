@@ -43,6 +43,7 @@ input, button, textarea, select {
 
 .container {
     width: 80%;
+    margin: 0 auto;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
