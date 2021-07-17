@@ -36,7 +36,7 @@ img {
 }
 
 .container {
-    max-width: 870px;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -131,6 +131,9 @@ img {
     }
     .hero {
         border-radius: 0 10px 10px 0;
+        /* border-top-left-radius: 0px; */
+        /* border-top-right-radius: 5px; */
+        /* border-bottom-right-radius: 5px; */
         width: 50%;
     }
     .main {
