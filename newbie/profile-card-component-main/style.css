@@ -88,8 +88,10 @@ hr{
     background-color: white; /* TEST*/
     text-align: center;
     background-image: url(./images/bg-pattern-card.svg);
-    background-repeat: no-repeat;
-    width: 24%;
+    background-repeat: repeat-x;
+    width: 350px;
+    /* max-width: 350px; */
+    /* min-width: 350px; */
     border-radius: 15px;
 }
 
