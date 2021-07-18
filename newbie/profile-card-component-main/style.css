@@ -1,23 +1,16 @@
 /* Box sizing rules */
 
 :root {
-   
-
---dark-cyan: hsl(185, 75%, 39%);
---desaturated-blue: hsl(229, 23%, 23%);
---grayish-blue: hsl(227, 10%, 46%);
---dark-gray: hsl(0, 0%, 59%);
-
-
-
-/* - Font size (name and stats): 18px */
-
-/* ### Font */
---fs: 18px;
---ff: 'Kumbh Sans', sans-serif;
-/* Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans) 
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    /* - Font size (name and stats): 18px */
+    /* ### Font */
+    --fs: 18px;
+    --ff: 'Kumbh Sans', sans-serif;
+    /* Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans) 
    Weights: 400, 700 */
-
 }
 
 *, *::before, *::after {
@@ -62,7 +55,7 @@ input, button, textarea, select {
     font: inherit;
 }
 
-hr{
+hr {
     border: 0;
     border-top: 1px solid var(--dark-gray);
     opacity: 0.2;
@@ -80,12 +73,13 @@ hr{
     background-color: var(--dark-cyan);
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
-    background-position: left -62% top -31em, right -50% bottom -39.5em;
-    background-position: -62% -496px, 150% calc(100% + 632px);
+    /* background-position: -62% -496px, 150% calc(100% + 632px); */
+    background-position: calc(50% - 520px) -496px, calc(50% + 462px) calc(100% + 632px);;
 }
 
 .card {
-    background-color: white; /* TEST*/
+    background-color: white;
+    /* TEST*/
     text-align: center;
     background-image: url(./images/bg-pattern-card.svg);
     background-repeat: repeat-x;
@@ -93,13 +87,14 @@ hr{
     /* max-width: 350px; */
     /* min-width: 350px; */
     border-radius: 15px;
+    z-index: 10;
 }
 
-.profile_img{
+.profile_img {
     border-radius: 50%;
     outline: 5px solid white;
     text-align: center;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 .profile_info {
@@ -129,8 +124,6 @@ hr{
     font-size: var(--fs);
 }
 
-
-
 /* Remove all animations and transitions for people that prefer not to see them */
 
 @media (prefers-reduced-motion: reduce) {
@@ -144,4 +137,3 @@ hr{
         scroll-behavior: initial;
     }
 }
-
