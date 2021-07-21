@@ -74,6 +74,7 @@ hr {
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     /* background-position: -62% -496px, 150% calc(100% + 632px); */
+    /* background-position: -62% -496px, 150% calc(100% + 632px); */
     background-position: calc(50% - 520px) -496px, calc(50% + 462px) calc(100% + 632px);;
 }
 
@@ -92,7 +93,7 @@ hr {
 
 .profile_img {
     border-radius: 50%;
-    outline: 5px solid white;
+    box-shadow: 0 0 0 5px white; /* outhaline radius not working for chrome*/
     text-align: center;
     margin: 0 auto;
 }
