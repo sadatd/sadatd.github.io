@@ -1,8 +1,0 @@
----
-layout: default
-img: bihsam1.jpeg
-category: Services
-title: Samsun Yayla Balı
-description: Samsun Yayla Balı
----
-  Samsun Yayla Balı
