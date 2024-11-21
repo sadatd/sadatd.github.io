@@ -1,9 +1,0 @@
----
-layout: default
-img:bihsam1.jpg
-category: Services
-title: Death to the Stock Photo:<br>Special Than
-description:Samsun Yayla Balı 
----
- %100 Doğal
- made in Samsun
