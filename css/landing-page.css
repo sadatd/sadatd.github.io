@@ -137,10 +137,31 @@ h6 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        max-width: 600px;
     }
 
     ul.banner-social-buttons > li {
         margin: 10px;
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    /* Make all buttons uniform size for 2x2 grid */
+    ul.banner-social-buttons > li a,
+    ul.banner-social-buttons > li p {
+        display: block;
+        width: 100%;
+        min-height: 60px;
+        padding: 15px 20px;
+        text-align: center;
+        line-height: 1.4;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    /* Ensure consistent text sizing */
+    ul.banner-social-buttons > li .network-name {
+        font-size: 14px;
+        letter-spacing: 2px;
     }
 }
 
@@ -158,14 +179,43 @@ h6 {
         font-size: 3em;
     }
 
+    ul.banner-social-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     ul.banner-social-buttons > li {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         padding: 0;
+        width: 100%;
+        max-width: 300px;
     }
 
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
+    }
+
+    /* Make all buttons (both <a> and <p>) uniform size */
+    ul.banner-social-buttons > li a,
+    ul.banner-social-buttons > li p {
+        display: block;
+        width: 100%;
+        min-height: 50px;
+        padding: 12px 20px;
+        text-align: center;
+        line-height: 1.5;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    /* Ensure phone number text doesn't break */
+    ul.banner-social-buttons > li p .network-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
